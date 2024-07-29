@@ -5,7 +5,7 @@ import unittest.mock
 from easinopy.cli.easinocli import *
 import re
 
-class TestEasinoCli(unittest.TestCase):
+class TestEasInoCli(unittest.TestCase):
 
     @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
     @unittest.mock.patch('sys.stderr', new_callable=io.StringIO)

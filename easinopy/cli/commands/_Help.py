@@ -6,14 +6,14 @@ class Help(Command):
     cmd = [ '-h', '--help' ]
     args = dict()
     opt_args = dict()
-    descr = 'Show easinopy help'
+    descr = 'Show easinopycli help'
 
     def run(args_provided):
-        version = Easino.get_api_version()
+        version = EasIno.get_api_version()
         
         help = ''
 
-        help += f'This is EasIno CLI program to help user executing commands in a fast way.\n'
+        help += f'This is easinopycli program to help user executing commands in a fast way.\n'
         help += f'    Version is v{version}\n\n'
         help += f'Command list:\n'
         

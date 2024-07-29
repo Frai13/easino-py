@@ -1,4 +1,4 @@
-# easino-py
+# EasInoPy
 
 ## Overview
 
