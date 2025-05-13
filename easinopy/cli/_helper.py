@@ -1,9 +1,11 @@
-from easinopy.cli.commands import _Command, _GetApiVersion, _Help
+from easinopy.cli.commands import _Command, _help, _get_api_version, _get_board_version, _get_default_config, \
+                                  _receive
 
 class Helper:
+
+    @staticmethod
     def get_commands(cmd = None):
         if cmd:
             return [f for f in _Command.Command.__subclasses__() if cmd in f.cmd]
         else:
             return [f for f in _Command.Command.__subclasses__()]
-    
